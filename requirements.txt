@@ -1,0 +1,5 @@
+pandas==2.2.1
+numpy==1.26.4
+scikit-learn==1.4.1
+padelpy==0.1.16
+rdkit==2024.9.1
