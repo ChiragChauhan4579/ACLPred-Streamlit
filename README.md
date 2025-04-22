@@ -5,20 +5,20 @@
 
 The ACLPred used pre-trained machine learning model based on molecular properties of the chemical compounds. Various machine learning algorithms were explored during development, and high-performing LGBM model was ultimately implemented in ACLPred. We evaluated the model performance using independent test data, external validation datasets as well as existing method to confirm its effectiveness and generalizability to predict anticancer compounds. Additionally, model interpretation analysis was conducted to identified key features that significantly contribute to anticancer activity prediction. 
 
-#Getting Started
+# Getting Started
 
 ## Prerequisites
 
 Before using ACLPred, ensure the required software and modules are installed:
 
 * OS support: Windows, Linux
-* Python version: 3.9 or higher
+* Python version: 3.12.7
 
 ### Dependencies
 - sklearn
 - pandas
 - numpy
-- rdkit-pypi
+- rdkit
 - padelpy
 
 ## How to use
@@ -30,9 +30,9 @@ Before using ACLPred, ensure the required software and modules are installed:
 ```
 2. Install dependencies:
 ```sh
-   $ pip3 install -r requirements.txt
+   $ pip install -r requirements.txt
 ```
-3. Run the tool:
+3. Run the Python script to launch the ACLPred:
   - For Terminal:
     ```sh
       python aclpred_gui.py
@@ -41,7 +41,8 @@ Before using ACLPred, ensure the required software and modules are installed:
     
       Upload `aclpred_gui.ipynb` in your jupytor notebook and `Run`
     
-## GUI
+## Graphical User Interface (GUI)
+ACLPred featrures a user-friendly graphical interface build using Tkinter, the standard Python interface to the Tk GUI toolkit.
 
 ![image](image2.png)
 
@@ -63,14 +64,15 @@ The predictions are saved in `Output_result.csv` in the working directory and in
   - `Prediction` (`Anticancer` / `Non-anticancer`)
   - `Prediction_Probability` (confidence score)
 
+## License
+
+The ACLPred is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
 
 ## Citation
 
-
 If you use ACLPred in your resrach, please cite:
 
-
 ## Contact
-
 
 For any query, please contact at [yadavarvind@cau.ac.kr], [junmokim@cau.ac.kr].
