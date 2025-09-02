@@ -120,9 +120,18 @@ def main():
     st.write("Predict anticancer ligands using a pre-trained ML model.")
 
     # Example input
+#     example_text = """CHEMBL3301610,CCN1CCN(Cc2ccc(Nc3ncc(F)c(-c4cc(F)c5nc(C)n(C(C)C)c5c4)n3)nc2)CC1
+# CHEMBL254328,C[C@]12CC[C@H](O)CC1=CC[C@@H]1[C@@H]2CC[C@]2(C)C(c3cccnc3)=CC[C@@H]12
+# CHEMBL1399,CC(C)(C#N)c1cc(Cn2cncn2)cc(C(C)(C)C#N)c1"""
     example_text = """CHEMBL3301610,CCN1CCN(Cc2ccc(Nc3ncc(F)c(-c4cc(F)c5nc(C)n(C(C)C)c5c4)n3)nc2)CC1
 CHEMBL254328,C[C@]12CC[C@H](O)CC1=CC[C@@H]1[C@@H]2CC[C@]2(C)C(c3cccnc3)=CC[C@@H]12
-CHEMBL1399,CC(C)(C#N)c1cc(Cn2cncn2)cc(C(C)(C)C#N)c1"""
+CHEMBL1399,CC(C)(C#N)c1cc(Cn2cncn2)cc(C(C)(C)C#N)c1
+Nilotinib,CC1=CN(C=N1)C1=CC(NC(=O)C2=CC=C(C)C(NC3=NC=CC(=N3)C3=CN=CC=C3)=C2)=CC(=C1)C(F)(F)F
+Aspirin,O=C(C)Oc1ccccc1C(=O)O
+Nimbolide,CC1=C2C(CC1C3=COC=C3)OC4C2(C(C5(C6C4OC(=O)C6(C=CC5=O)C)C)CC(=O)OC)C
+Nimbin,CC1=C2C(CC1C3=COC=C3)OC4C2(C(C5(C(C4OC(=O)C)C(C=CC5=O)(C)C(=O)OC)C)CC(=O)OC)C
+Paracetamol,CC(=O)Nc1ccc(cc1)O
+"""
 
     input_method = st.radio("Choose input method:", ["Paste SMILES", "Upload CSV"])
 
