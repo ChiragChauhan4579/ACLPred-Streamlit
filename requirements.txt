@@ -4,4 +4,4 @@ scikit-learn
 padelpy
 rdkit
 streamlit
-
+lightgbm
