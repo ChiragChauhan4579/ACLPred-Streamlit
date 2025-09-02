@@ -155,7 +155,7 @@ Paracetamol,CC(=O)Nc1ccc(cc1)O
             with st.spinner("Running prediction..."):
                 try:
                     output_df = run_prediction(df_input)
-                    df["interpretation"] = df["Predictiin"].apply(lambda x: "Anticancer Compound" if x == "Anticancer" else "Not an Anticancer Agent")
+                    output_df["interpretation"] = output_df["Prediction"].apply(lambda x: "Anticancer Compound" if x == "Anticancer" else "Not an Anticancer Agent")
 
                     st.success("Prediction completed successfully!")
                     st.dataframe(output_df)
