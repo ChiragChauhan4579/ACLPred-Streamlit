@@ -149,7 +149,7 @@ Paracetamol,CC(=O)Nc1ccc(cc1)O
 
     if df_input is not None:
         st.write("### Input Data Preview")
-        st.dataframe(df_input.head())
+        st.dataframe(df_input.head(len(df_input)))
 
         if st.button("🔮 Run Prediction"):
             with st.spinner("Running prediction..."):
